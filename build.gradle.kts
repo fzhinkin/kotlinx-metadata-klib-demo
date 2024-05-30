@@ -6,6 +6,7 @@ import org.jetbrains.kotlin.util.DummyLogger
 
 buildscript {
     dependencies {
+        classpath("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.9.0")
         classpath("org.jetbrains.kotlinx:kotlinx-metadata-klib:0.0.5")
     }
 }
