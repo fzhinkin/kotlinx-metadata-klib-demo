@@ -1,18 +1,18 @@
-import kotlinx.metadata.isExpect
 import kotlinx.metadata.klib.KlibModuleMetadata
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinMetadataTarget
 import org.jetbrains.kotlin.konan.library.resolverByName
 import org.jetbrains.kotlin.util.DummyLogger
+import kotlin.metadata.isExpect
 
 buildscript {
     dependencies {
-        classpath("org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.9.0")
-        classpath("org.jetbrains.kotlinx:kotlinx-metadata-klib:0.0.5")
+        classpath("org.jetbrains.kotlin:kotlin-metadata-jvm:2.0.0")
+        classpath("org.jetbrains.kotlinx:kotlinx-metadata-klib:0.0.6")
     }
 }
 
 plugins {
-    kotlin("multiplatform") version "1.9.24"
+    kotlin("multiplatform") version "2.0.0"
 }
 
 group = "org.example"
